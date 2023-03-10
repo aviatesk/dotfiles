@@ -1,0 +1,21 @@
+# global
+_*
+
+# macOS
+.DS_Store
+
+# vsc
+*.code-workspace
+
+# jupyter
+/.ipynb_checkpoints/
+
+# julia
+Manifest.toml
+
+# python
+.python_version
+!__init__.py
+
+# node
+node_modules

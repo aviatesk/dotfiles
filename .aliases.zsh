@@ -1,0 +1,35 @@
+# cd
+alias home='cd ~'
+alias ..='cd ..'
+alias ...='cd .. && cd ..'
+alias ....='cd .. && cd .. && cd ..'
+
+# git
+alias gs='git status'
+alias gd='git diff'
+alias gf='git fetch --prune'
+alias gp='git pull'
+alias go='git checkout'
+alias gl='git log --graph --decorate'
+
+# julia
+alias jl='julia'
+alias jltest='jl -e "using Pkg; Pkg.test()"'
+alias jlplot='jl --project=~/julia/plot -e "@time using Plots; @time plot(rand(10,3));"'
+alias jlr='julia-rel'
+alias jlrtest='jlr -e "using Pkg; Pkg.test()"'
+alias jldplot='jlr --project=~/julia/plot -e "@time using Plots; @time plot(rand(10,3));"'
+alias jld='~/julia/julia/usr/bin/julia'
+alias jldtest='jld -e "using Pkg; Pkg.test()"'
+alias jldplot='jld --project=~/julia/plot -e "@time using Plots; @time plot(rand(10,3));"'
+alias jld1='~/julia/julia1/usr/bin/julia'
+alias jld1test='jld1 -e "using Pkg; Pkg.test()"'
+alias jld2='~/julia/julia2/usr/bin/julia'
+alias jld2test='jld2 -e "using Pkg; Pkg.test()"'
+alias jld3='~/julia/julia3/usr/bin/julia'
+alias jld3test='jld3 -e "using Pkg; Pkg.test()"'
+alias jlb='./usr/bin/julia'
+alias jlbtest='./usr/bin/julia test/runtests.jl'
+alias jlbplot='./usr/bin/julia --project=~/julia/plot -e "@time using Plots; @time plot(rand(10,3));"'
+alias jet='jld ~/julia/packages/JET/jet'
+alias franklin="jld -e 'using Franklin; serve()' -i"
